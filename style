@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.2rem;
+}
+
+.calculator{
+    border: 1px solid black;
+    border-radius:5px;
+    width:800px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.calculator-input{
+    width:100%;
+    font-size: 4rem;
+    height: 80px;
+    border:none;
+    background-color: cadetblue;
+    color:aliceblue;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+button{
+    height:50px;
+    width:100px;
+    background-color: black;
+    border-radius: 1px;
+    border:2px solid cadetblue;
+    background-color: transparent;
+    font-size:  30px;
+    color:black;
+}
+
+button:hover{
+    background-color: palevioletred;
+
+}
+
+.operator{
+    color:cadetblue;
+}
+
+.clear{
+    background-color: plum;
+    border-color: pink;
+    color:white;
+}
+
+.clear:hover{
+    background-color: palevioletred;
+}
+
+.equal-sign{
+    background-color: pink;
+    grid-area: 2/4/6/5; 
+    /*2.satır 4.colon başlangıç, bitiş:6-5*/
+    height:100%;
+}
+
+.equal-sign:hover{
+    background-color: pink;
+}
+
+.calculator-keys{
+    display:grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap:20px;
+    padding:20px;
+}
+
+
